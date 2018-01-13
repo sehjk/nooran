@@ -11,3 +11,5 @@ LazyData: true
 Depends: R (>= 3.4.3)
 RoxygenNote: 6.0.1
 Suggests: testthat
+URL: https://github.com/sehjk/nooran
+BugReport: https://github.com/sehjk/nooran/issues
