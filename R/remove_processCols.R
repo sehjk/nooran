@@ -13,6 +13,6 @@
 #' removeProcessCols(db)
 removeProcessCols <- function(db){
   processCols <- grep("check|subscriberid|simid|note", names(db), value = TRUE)
-  outputDb <- db[, !names(db) %in% (processCols)]
+  outputDb <- db[, !names(db) %in% (processCols), drop = F]
   return(outputDb)
 }

@@ -13,6 +13,6 @@
 #' removePHI(db)
 removePHI <- function(db) {
   phiCols <- grep("name|label|phone1|phone2|phone3|new_phone|instanceName|audit", names(db), value = TRUE)
-  outputDb <- db[,!names(db) %in% (phiCols)]
+  outputDb <- db[, !names(db) %in% (phiCols), drop = F]
   return(outputDb)
 }
